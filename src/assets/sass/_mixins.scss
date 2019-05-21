@@ -1,0 +1,32 @@
+@mixin custom-btn($f-color, $bg-color, $padding){}
+
+
+
+
+%custom-btn{
+    color: $white;
+    background-color: transparent;
+    background-image: none;
+    border-color: $white;
+    padding: 18px 40px;
+    text-decoration:none;
+}
+
+%blue-border{
+    content: "";
+    position: absolute;
+    border-bottom: 4px solid $blue;
+    width: 5%;
+    display: block; 
+   
+}
+
+%blue-btn{
+    color: $white;
+    background-color: $blue;
+    background-image: none;
+    border-color: $blue;
+    padding: 18px 40px;
+    box-shadow: none;
+    margin: none;
+}

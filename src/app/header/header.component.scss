@@ -1,0 +1,16 @@
+@import '../../assets/sass/_variables';
+
+.active{
+    color: $blue;
+}
+a{
+    color: $gray;
+    font-size: 18px;
+}
+header{
+    padding: 66px 0;
+}
+.fa-bars:before{
+    color: $blue;
+    font-size: 50px;
+}

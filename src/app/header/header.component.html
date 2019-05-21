@@ -1,0 +1,30 @@
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg">
+   <section class="container">
+    <a class="navbar-brand" href="#"><img src="../../assets/img/checkbox-logo.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"  aria-label="Toggle navigation">
+      <!-- <span class="navbar-toggler-icon"></span> -->
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup" [ngbCollapse]="isCollapsed">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link" routerLink="/home" routerLinkActive="active">{{'home'| translate}} </a>
+        <a class="nav-item nav-link"  routerLink="/aboutus" routerLinkActive="active">{{'about'| translate}}</a>
+        <a class="nav-item nav-link"  routerLink="/Dashboard" routerLinkActive="active">{{'dashboard'| translate}}</a>
+        <a class="nav-item nav-link"  routerLink="/project" routerLinkActive="active">{{'project'| translate}}</a>
+        <a class="nav-item nav-link"  routerLink="/blog" routerLinkActive="active">{{'blog'| translate}}</a>
+        <a class="nav-item nav-link" routerLink="/contactus" routerLinkActive="active">{{'contact'| translate}}</a>
+
+        
+
+       
+      </div>
+    </div>
+   </section>
+  </nav>
+</header>
+
+

@@ -1,0 +1,32 @@
+@import '../../assets/sass/_variables';
+@import '../../assets/sass/mixins';
+
+
+.get-touch{
+    background-color: $blue;
+    padding: 30px 0;
+    color: white;
+}
+.btn-outline-secondary{
+    color: white;
+    border-color: white;
+}
+.footer{
+    padding-top: 55px ;
+    background-color: #161616;
+    color: white;
+    h5{
+        color:$blue;
+    }
+    .c-right{
+        padding: 30px;
+        background-color: black;
+    }
+    i{
+        padding-right: 8px;
+        color: $blue;
+    }
+    a{
+        color: white;
+        }
+}

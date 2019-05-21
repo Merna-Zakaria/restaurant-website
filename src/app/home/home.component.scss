@@ -1,0 +1,104 @@
+@import '../../assets/sass/_variables';
+@import '../../assets/sass/mixins';
+.hero-sec{
+    h1{
+        font-size: 50px;
+    }
+    p{
+        font-size: 18px;
+        padding: 15px;
+        margin: 0 auto;
+    }
+img{
+    height: 760px;
+    width: 100%;
+}
+.carousel-control-next{
+    color: blue;
+}
+
+.carousel-caption{
+    padding-top: 300px;
+    padding-bottom: 260px;
+}
+button{
+    @extend %custom-btn;
+}
+}
+
+// ============category-sec==============
+.category-sec{
+    padding: $pad-sec;
+    background-color: $light-gray;
+    i{
+        font-size: 60px;
+    }
+    h3{
+        color: $blue;
+        padding: 20px;
+    }
+}
+// =======================project-sec=================
+.project-sec{
+    padding: $pad-sec;
+    h3{
+      position: relative;
+      margin-bottom: 25px;
+      &:after {
+          @extend %blue-border;
+          margin-top: 20px;
+      }
+    }
+    img{
+        height: 240px;
+    }
+    a{
+        padding: 10px 20px;
+        background-color: $blue;
+        color: white;
+    }
+}
+// ==========================statistics-sec=========================
+.statistics-sec{
+    padding: $pad-sec;
+    background-color: $blue;
+    color: $white;
+    h3{
+        position: relative;
+        &:after{
+            content: "";
+            position: absolute;
+            border-bottom: 3px solid white;
+            width: 20%;
+            display: block;
+            left: 40%;
+            margin-top: 20px;
+        }
+    }
+}
+// ========================blog-sec==============
+.blog-sec{
+    padding: $pad-sec;
+    h3{
+        position: relative;
+        margin-bottom: 25px;
+        &:after {
+            @extend %blue-border;
+            margin-top: 20px;
+        }
+    }
+    img{
+       width: 100%;
+       height: 210px;
+       
+    }
+    .bg-color{
+        background-color: $light-gray;
+    }
+    .content{
+        padding: 30px 0;
+    }
+    button{
+        @extend %custom-btn;
+    }
+}

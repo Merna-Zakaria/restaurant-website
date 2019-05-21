@@ -1,0 +1,128 @@
+
+
+,<section class="hero-sec">
+  <ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
+    <ng-template ngbSlide *ngFor="let image of images">
+      <img [src]="image" alt="Random slide">
+      <div class="carousel-caption container">
+        <section class=" justify-content-center">
+          <h1>{{'header-title'| translate}}</h1>
+          <p class="col-9">{{'header-content'| translate}}</p>
+          <button>{{'about-btn'| translate}}</button>
+        </section>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</section>
+
+<!-- ============category-sec======================= -->
+<section class="category-sec">
+  <div class="container">
+    <div class="row pb-5">
+      <div class="col-12 col-md-4 text-center">
+          <i class="fab fa-twitch"></i>
+          <h3>{{'title1'| translate}}</h3>
+          <p>{{'content'| translate}}</p>
+      </div>
+      <div class="col-12 col-md-4 text-center">
+          <i class="fas fa-bus-alt"></i>
+          <h3>{{'title2'| translate}}</h3>
+          <p>{{'content'| translate}}</p>
+      </div>
+      <div class="col-12 col-md-4 text-center">
+          <i class="fab fa-pied-piper-alt"></i>
+          <h3>{{'title3'| translate}}</h3>
+          <p>{{'content'| translate}}</p>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-4 text-center">
+            <i class="fab fa-slack-hash"></i>
+            <h3>{{'title4'| translate}}</h3>
+            <p>{{'content'| translate}}</p>
+        </div>
+        <div class="col-12 col-md-4 text-center">
+            <i class="far fa-paper-plane"></i>
+            <h3>{{'title5'| translate}}</h3>
+            <p>{{'content'| translate}}</p>
+        </div>
+        <div class="col-12 col-md-4 text-center">
+            <i class="far fa-newspaper"></i>
+            <h3>{{'title6'| translate}}</h3>
+            <p>{{'content'| translate}}</p>
+        </div>
+      </div>
+  </div>
+</section>
+<!-- ========================project-sec================= -->
+<section class="project-sec container">
+  <h3 class="text-uppercase">{{'project-sec'|translate}}</h3>
+<div class="row mb-3 mt-5">
+  <img class="col-12 mb-3 col-md-4" src="../../assets/img/4.jpg">
+  <img class="col-12 mb-3 col-md-4" src="../../assets/img/5.jpg">
+  <img class="col-12 mb-3 col-md-4" src="../../assets/img/6.jpg">
+</div>
+<nav aria-label="Page navigation example ">
+    <ul class="pagination container d-flex flex-row-reverse pr-0">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+            <i class="fas fa-chevron-right"></i>
+        </a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</section>
+<!-- ======================statistics-sec=================== -->
+<section class="statistics-sec">
+  <div class="container">
+    <div class="row">
+      <div class="col-6 col-md-3  text-center" *ngFor='let item of items; let i =index'>
+          <h3 >{{'item.count' | translate}}</h3>
+          <p class="mt-5 text-uppercase">{{'item.name' | translate}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ============================blog-sec================= -->
+  <section class="blog-sec container">
+      <h3 class="text-uppercase">{{'blog-sec' | translate}}</h3>
+      <div class="row mt-5">
+           <div class="col-md-6 col-12 mb-3">
+             <div class="containr ">
+               <div class="row bg-color no-gutters bg-color ">
+                 <div class="col-4">
+                   <img class="pr-3" src="../../assets/img/7.jpg">
+                 </div>
+                 <div class="col-8 content">
+                   <p><small>{{'date'| translate}}</small></p>
+                   <p>{{'content'| translate}}</p>
+                   <a><p class="ml-auto mb-0 col-4">{{'more'| translate}}</p></a>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <div class="col-md-6 col-12">
+              <div class="containr ">
+                <div class="row bg-color no-gutters bg-color ">
+                  <div class="col-4">
+                    <img class="pr-3" src="../../assets/img/8.jpg">
+                  </div>
+                  <div class="col-8 content">
+                    <p><small>{{'date'| translate}}</small></p>
+                    <p>{{'content'| translate}} </p>
+                    <a><p class="ml-auto mb-0 col-4">{{'more'| translate}}</p></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+  </section>
+
+
+
+

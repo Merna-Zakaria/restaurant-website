@@ -1,0 +1,85 @@
+<!-- 
+ <section class="container">
+   <section class="row">
+    <article class="col-12 col-md-8" *ngFor="let sec of sections">
+     <div class="image">
+      <div class="parent">
+        <img class="w-100 " src={{sec.src}} alt="Random slide">
+        <div class="overlay"></div>
+       </div>
+       <div class="date">
+        <p>Date</p>
+        <p>{{sec.date}}</p>
+       </div>
+     </div>
+      <h3>{{sec.title}}</h3>
+      <p>{{sec.content}}</p>
+      <div class="col-4 ml-auto text-right pr-0"><a><button>Read more</button></a></div>
+    </article>
+    <section class="col-12 col-md-4 search-sec">
+     <div class="d-flex">
+       <p>Search</p>
+       <i class="fas fa-search"></i>
+     </div>
+    </section>
+   </section>
+ </section> -->
+
+
+ <section class="container">
+   <div class="row">
+     <div class="col-8" >
+        <article  *ngFor="let sec of sections">
+            <div class="image">
+             <div class="parent">
+               <img class="w-100 " src={{sec.src}} alt="Random slide">
+               <div class="overlay"></div>
+              </div>
+              <div class="Date" style=" position: absolute;
+              bottom: 20px;
+              background-color: blue;
+              color: white;
+              padding: 10px;">
+               <p>{{'Date' | translate}}</p>
+               <p>{{'sec.date' | translate}}</p>
+              </div>
+            </div>
+             <h3>{{'sec.title' | translate}}</h3>
+             <p class="pb-5">{{'sec.content' | translate}}</p>
+             <div class="col-4 ml-auto text-right pr-0"><a><button>{{'more' | translate}}</button></a></div>
+           </article>
+     </div>
+     <div class="col-4" >
+        <section class="search-sec">
+          
+            <div class="d-flex search-box align-items-center">
+              <p>{{'Search' | translate}}</p>
+              <i class="fas fa-search ml-auto"></i>
+            </div>
+            <h3>{{'posts' | translate}}</h3>
+            <div class="media" *ngFor="let post of posts" >
+                <img class="mr-3" src={{post.img}} alt="Generic placeholder image">
+                <div class="media-body">
+                   <p>{{'post.content' | translate}}</p>
+                   <p>{{'post.country' | translate}}</p>
+                </div>
+              </div>
+              <div class="projects">
+                <h3>{{'projects' | translate}}</h3>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-6" *ngFor="let img of images">
+                        <img [src]="img" >
+                    </div>
+                    <div class="col-6"></div>
+                  </div>
+                  <div class="row">
+                      <div class="col-6"></div>
+                      <div class="col-6"></div>
+                    </div>
+                </div>
+              </div>
+           </section>
+     </div>
+   </div>
+ </section>

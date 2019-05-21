@@ -1,0 +1,20 @@
+.lang-btn{
+    -webkit-box-shadow: 0px 6px 5px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 6px 5px -7px rgba(0,0,0,0.75);
+box-shadow: 0px 6px 5px -7px rgba(0,0,0,0.75);
+}
+
+@font-face {
+    font-family: lato;
+    src: url(../assets/font/Lato-Regular.ttf) ;
+  }
+  @font-face {
+    font-family: lato;
+    src: url(../assets/font/Lato-Bold.ttf) ;
+  }
+*{
+    font-display: lato;
+}
+html{
+  font-size: 18px,
+}
